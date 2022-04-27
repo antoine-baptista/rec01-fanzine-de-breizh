@@ -12,7 +12,7 @@ CREATE TABLE USERS(
         user_nom         Varchar (60) NOT NULL ,
         user_prenom      Varchar (60) NOT NULL ,
         user_email       Varchar (100) NOT NULL ,
-        user_password    Varchar (50) NOT NULL ,
+        user_password    Varchar (150) NOT NULL ,
         user_authentifie Int ,
         user_role        Varchar (25) NOT NULL ,
         date_de_creation TimeStamp NOT NULL
@@ -83,8 +83,8 @@ CREATE TABLE VILLES(
 CREATE TABLE CATEGORIES(
         categorie_ID               Int  Auto_increment  NOT NULL ,
         categorie_nom              Varchar (50) NOT NULL ,
-        categorie_description      Varchar (255) ,
         categorie_slug             Varchar (80) NOT NULL ,
+        categorie_description      Varchar (255) ,
         categorie_date_de_creation TimeStamp NOT NULL
 	,CONSTRAINT CATEGORIES_PK PRIMARY KEY (categorie_ID)
 )ENGINE=InnoDB;
@@ -96,7 +96,8 @@ CREATE TABLE CATEGORIES(
 
 CREATE TABLE ARTICLES(
         article_ID                  Int NOT NULL ,
-        article_titre               Varchar (255) NOT NULL ,
+        article_titre               Varchar (150) NOT NULL ,
+        article_slug                Varchar (255) NOT NULL ,
         article_contenu             Text NOT NULL ,
         article_url_image           Varchar (255) NOT NULL ,
         article_tag                 Varchar (255) NOT NULL ,
@@ -113,33 +114,37 @@ CREATE TABLE ARTICLES(
 
 
 #------------------------------------------------------------
-# Table: COMMENTE
+# Table: MESSAGES
 #------------------------------------------------------------
 
-CREATE TABLE COMMENTE(
-        article_ID       Int NOT NULL ,
-        user_ID          Int NOT NULL ,
-        commentaire      Text NOT NULL ,
-        commentaire_date TimeStamp NOT NULL
-	,CONSTRAINT COMMENTE_PK PRIMARY KEY (article_ID,user_ID)
+CREATE TABLE MESSAGES(
+        message_ID           Int  Auto_increment  NOT NULL ,
+        message_contenu      Text NOT NULL ,
+        message_date_d_envoi TimeStamp NOT NULL ,
+        reponse_contenu      Text ,
+        reponse_date         TimeStamp ,
+        user_ID              Int NOT NULL ,
+        user_ID_USERS        Int NOT NULL
+	,CONSTRAINT MESSAGES_PK PRIMARY KEY (message_ID)
 
-	,CONSTRAINT COMMENTE_ARTICLES_FK FOREIGN KEY (article_ID) REFERENCES ARTICLES(article_ID)
-	,CONSTRAINT COMMENTE_USERS0_FK FOREIGN KEY (user_ID) REFERENCES USERS(user_ID)
+	,CONSTRAINT MESSAGES_USERS_FK FOREIGN KEY (user_ID) REFERENCES USERS(user_ID)
+	,CONSTRAINT MESSAGES_USERS0_FK FOREIGN KEY (user_ID_USERS) REFERENCES USERS(user_ID)
 )ENGINE=InnoDB;
 
 
 #------------------------------------------------------------
-# Table: ENVOIE DES MESSAGES
+# Table: COMMENTER
 #------------------------------------------------------------
 
-CREATE TABLE ENVOIE_DES_MESSAGES(
-        user_ID            Int NOT NULL ,
-        user_ID_USERS      Int NOT NULL ,
-        message_contenu    Text NOT NULL ,
-        message_date_envoi TimeStamp NOT NULL
-	,CONSTRAINT ENVOIE_DES_MESSAGES_PK PRIMARY KEY (user_ID,user_ID_USERS)
+CREATE TABLE COMMENTER(
+        article_ID             Int NOT NULL ,
+        user_ID                Int NOT NULL ,
+        commentaire            Text NOT NULL ,
+        commentaire_validation Bool ,
+        commentaire_date       TimeStamp NOT NULL
+	,CONSTRAINT COMMENTER_PK PRIMARY KEY (article_ID,user_ID)
 
-	,CONSTRAINT ENVOIE_DES_MESSAGES_USERS_FK FOREIGN KEY (user_ID) REFERENCES USERS(user_ID)
-	,CONSTRAINT ENVOIE_DES_MESSAGES_USERS0_FK FOREIGN KEY (user_ID_USERS) REFERENCES USERS(user_ID)
+	,CONSTRAINT COMMENTER_ARTICLES_FK FOREIGN KEY (article_ID) REFERENCES ARTICLES(article_ID)
+	,CONSTRAINT COMMENTER_USERS0_FK FOREIGN KEY (user_ID) REFERENCES USERS(user_ID)
 )ENGINE=InnoDB;
 
