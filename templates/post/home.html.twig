@@ -1,0 +1,569 @@
+{% extends 'fanzine.html.twig' %}
+
+{% block title %}Hello TestController!{% endblock %}
+
+{% block body %}
+
+    <!-- AB 2022-04-26
+         J'ai considéré que le main démarrait à partir d ce point -->
+    <!-- s-content 
+    ================================================== -->
+    <section class="s-content">
+        
+        <div class="row masonry-wrap">
+            <div class="masonry">
+
+                <div class="grid-sizer"></div>
+
+                <article class="masonry__brick entry format-standard" data-aos="fade-up">
+                        
+                    <div class="entry__thumb">
+                        <a href="single-standard.html" class="entry__thumb-link">
+                            <img src="{{ asset('fanzine/assets/images/thumbs/masonry/lamp-400.jpg') }}" 
+                                    srcset="fanzine/assets/images/thumbs/masonry/lamp-400.jpg 1x, fanzine/assets/images/thumbs/masonry/lamp-800.jpg 2x" alt="">
+                        </a>
+                    </div>
+    
+                    <div class="entry__text">
+                        <div class="entry__header">
+                            
+                            <div class="entry__date">
+                                <a href="single-standard.html">15 Décembre 2017</a>
+                            </div>
+                            <h1 class="entry__title"><a href="single-standard.html">Juste un post de format standard</a></h1>
+                            
+                        </div>
+                        <div class="entry__excerpt">
+                            <p>
+                                Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
+                            </p>
+                        </div>
+                        <div class="entry__meta">
+                            <span class="entry__meta-links">
+                                <a href="category.html">Design</a> 
+                                <a href="category.html">Photographie</a>
+                            </span>
+                        </div>
+                    </div>
+    
+                </article> <!-- end article -->
+
+                <article class="masonry__brick entry format-quote" data-aos="fade-up">
+                        
+                    <div class="entry__thumb">
+                        <blockquote>
+                                <p>Une bonne conception consiste à rendre quelque chose intelligible et mémorable. Un excellent design rend quelque chose mémorable et significatif.</p>
+    
+                                <cite>Fanzine de Breizh</cite>
+                        </blockquote>
+                    </div>   
+    
+                </article> <!-- end article -->
+
+                <article class="masonry__brick entry format-standard" data-aos="fade-up">
+                        
+                    <div class="entry__thumb">
+                        <a href="single-standard.html" class="entry__thumb-link">
+                            <img src="{{ asset('fanzine/assets/images/thumbs/masonry/tulips-400.jpg') }}" 
+                                    srcset="fanzine/assets/images/thumbs/masonry/tulips-400.jpg 1x, fanzine/assets/images/thumbs/masonry/tulips-800.jpg 2x" alt="">
+                        </a>
+                    </div>
+    
+                    <div class="entry__text">
+                        <div class="entry__header">
+                            
+                            <div class="entry__date">
+                                <a href="single-standard.html">15 Décembre 2017</a>
+                            </div>
+                            <h1 class="entry__title"><a href="single-standard.html">10 faits intéressants sur la caféine</a></h1>
+                            
+                        </div>
+                        <div class="entry__excerpt">
+                            <p>
+                                Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
+                            </p>
+                        </div>
+                        <div class="entry__meta">
+                            <span class="entry__meta-links">
+                                <a href="category.html">Santé</a>
+                            </span>
+                        </div>
+                    </div>
+    
+                </article> <!-- end article -->
+
+                <article class="masonry__brick entry format-standard" data-aos="fade-up">
+
+                    <div class="entry__thumb">
+                        <a href="single-standard.html" class="entry__thumb-link">
+                            <img src="{{ asset('fanzine/assets/images/thumbs/masonry/cookies-400.jpg') }}" 
+                                    srcset="fanzine/assets/images/thumbs/masonry/cookies-400.jpg 1x, fanzine/assets/images/thumbs/masonry/cookies-800.jpg 2x" alt="">
+                        </a>
+                    </div>
+    
+                    <div class="entry__text">
+                        <div class="entry__header">
+                            
+                            <div class="entry__date">
+                                <a href="single-standard.html">10 Décembre 2017</a>
+                            </div>
+                            <h1 class="entry__title"><a href="single-standard.html">Biscuits à la farine d'avoine sans sucre</a></h1>
+                            
+                        </div>
+                        <div class="entry__excerpt">
+                            <p>
+                                Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
+                            </p>
+                        </div>
+                        <div class="entry__meta">
+                            <span class="entry__meta-links">
+                                <a href="category.html">Cuisine</a>
+                                <a href="category.html">Santé</a>
+                            </span>
+                        </div>
+                    </div>
+    
+                </article> <!-- end article -->
+
+                <article class="masonry__brick entry format-standard" data-aos="fade-up">
+
+                    <div class="entry__thumb">
+                        <a href="single-standard.html" class="entry__thumb-link">
+                            <img src="{{ asset('fanzine/assets/images/thumbs/masonry/wheel-400.jpg') }}" 
+                                    srcset="fanzine/assets/images/thumbs/masonry/wheel-400.jpg 1x, fanzine/assets/images/thumbs/masonry/wheel-800.jpg 2x" alt="">
+                        </a>
+                    </div>
+    
+                    <div class="entry__text">
+                        <div class="entry__header">
+                            
+                            <div class="entry__date">
+                                <a href="single-standard.html">10 Décembre 2017</a>
+                            </div>
+                            <h1 class="entry__title"><a href="single-standard.html">La visite des parcs à thème améliore votre santé</a></h1>
+                            
+                        </div>
+                        <div class="entry__excerpt">
+                            <p>
+                                Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
+                            </p>
+                        </div>
+                        <div class="entry__meta">
+                            <span class="entry__meta-links">
+                                <a href="#">Santé</a> 
+                                <a href="#">Mode de vie</a>
+                            </span>
+                        </div>
+                    </div>
+    
+                </article> <!-- end article -->
+
+                <article class="masonry__brick entry format-video" data-aos="fade-up">
+                        
+                    <div class="entry__thumb video-image">
+                        <a href="https://youtu.be/-eP0a5Ih67E" data-lity>
+                            <img src="fanzine/assets/images/thumbs/masonry/shutterbug-400.jpg" 
+                                    srcset="fanzine/assets/images/thumbs/masonry/shutterbug-400.jpg 1x, fanzine/assets/images/thumbs/masonry/shutterbug-800.jpg 2x" alt="">
+                        </a>
+                    </div>
+    
+                    <div class="entry__text">
+                        <div class="entry__header">
+                            
+                            <div class="entry__date">
+                                <a href="single-video.html">10 Décembre 2017</a>
+                            </div>
+                            <h1 class="entry__title"><a href="single-video.html">Les principaux avantages de la photographie de famille</a></h1>
+                            
+                        </div>
+                        <div class="entry__excerpt">
+                            <p>
+                                Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
+                            </p>
+                        </div>
+                        <div class="entry__meta">
+                            <span class="entry__meta-links">
+                                <a href="category.html">Famille</a> 
+                                <a href="category.html">Photographie</a>
+                            </span>
+                        </div>
+                    </div>
+    
+                </article> <!-- end article -->
+
+
+                <article class="masonry__brick entry format-gallery" data-aos="fade-up">
+                        
+                    <div class="entry__thumb slider">
+                        <div class="slider__slides">
+                            <div class="slider__slide">
+                                <img src="{{ asset('fanzine/assets/images/thumbs/masonry/gallery/gallery-1-400.jpg') }}" 
+                                        srcset="fanzine/assets/images/thumbs/masonry/gallery/gallery-1-400.jpg 1x, fanzine/assets/images/thumbs/masonry/gallery/gallery-1-800.jpg 2x" alt=""> 
+                            </div>
+                            <div class="slider__slide">
+                                <img src="{{ asset('fanzine/assets/images/thumbs/masonry/gallery/gallery-2-400.jpg') }}" 
+                                        srcset="fanzine/assets/images/thumbs/masonry/gallery/gallery-2-400.jpg 1x, fanzine/assets/images/thumbs/masonry/gallery/gallery-2-800.jpg 2x" alt=""> 
+                            </div>
+                            <div class="slider__slide">
+                                <img src="{{ asset('fanzine/assets/images/thumbs/masonry/gallery/gallery-3-400.jpg') }}" 
+                                        srcset="fanzine/assets/images/thumbs/masonry/gallery/gallery-3-400.jpg 1x, fanzine/assets/images/thumbs/masonry/gallery/gallery-3-800.jpg 2x" alt="">  
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="entry__text">
+                        <div class="entry__header">
+                            
+                            <div class="entry__date">
+                                <a href="single-gallery.html">10 Décembre 2017</a>
+                            </div>
+                            <h1 class="entry__title"><a href="single-gallery.html">Tendances et idées pour l'aménagement de l'espace de travail</a></h1>
+                            
+                        </div>
+                        <div class="entry__excerpt">
+                            <p>
+                                Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
+                            </p>
+                        </div>
+                        <div class="entry__meta">
+                            <span class="entry__meta-links">
+                                <a href="category.html">Travail</a> 
+                                <a href="category.html">Gestion</a>
+                            </span>
+                        </div>
+                    </div>
+    
+                </article> <!-- end article -->
+
+                <article class="masonry__brick entry format-audio" data-aos="fade-up">
+
+                    <div class="entry__thumb">
+                        <a href="single-audio.html" class="entry__thumb-link">
+                            <img src="{{ asset('fanzine/assets/images/thumbs/masonry/guitarman-400.jpg') }}" 
+                                    srcset="fanzine/assets/images/thumbs/masonry/guitarman-400.jpg 1x, fanzine/assets/images/thumbs/masonry/guitarman-800.jpg 2x" alt="">
+                        </a>
+                        <div class="audio-wrap">
+                            <audio id="player" src="fanzine/assets/media/Ulf-Wakenius-Bretagne.mp3" width="100%" height="42" controls="controls"></audio>
+                        </div>
+                    </div>
+
+                    <div class="entry__text">
+                        <div class="entry__header">
+                            
+                            <div class="entry__date">
+                                <a href="single-audio.html">10 Décembre 2017</a>
+                            </div>
+                            <h1 class="entry__title"><a href="single-audio.html">Ce que vos préférences musicales révèlent sur vous et votre personnalité</a></h1>
+                            
+                        </div>
+                        <div class="entry__excerpt">
+                            <p>
+                                Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
+                            </p>
+                        </div>
+                        <div class="entry__meta">
+                            <span class="entry__meta-links">
+                                <a href="category.html">Musique</a> 
+                                <a href="category.html">Mode de vie</a>
+                            </span>
+                        </div>
+                    </div>
+
+                </article> <!-- end article -->
+
+                <article class="masonry__brick entry format-link" data-aos="fade-up">
+                    
+                    <div class="entry__thumb">
+                        <div class="link-wrap">
+                            <p>La seule ressource dont vous aurez besoin pour créer un blog à l'aide de WordPress</p>
+                            <cite>
+                                <a target="_blank" href="https://twitter.com/fanzinedebreizh">@fanzinedebreizh</a>
+                            </cite>
+                        </div>
+                    </div>
+                    
+                </article> <!-- end article -->
+
+                <article class="masonry__brick entry format-standard" data-aos="fade-up">
+
+                    <div class="entry__thumb">
+                        <a href="single-standard.html" class="entry__thumb-link">
+                            <img src="{{ asset('fanzine/assets/images/thumbs/masonry/jump-400.jpg') }}" 
+                                    srcset="fanzine/assets/images/thumbs/masonry/jump-400.jpg 1x, fanzine/assets/images/thumbs/masonry/jump-800.jpg 2x" alt="">
+                        </a>
+                    </div>
+
+                    <div class="entry__text">
+                        <div class="entry__header">
+                            
+                            <div class="entry__date">
+                                <a href="single-standard.html">December 10, 2017</a>
+                            </div>
+                            <h1 class="entry__title"><a href="single-standard.html">Create Meaningful Family Moments.</a></h1>
+                            
+                        </div>
+                        <div class="entry__excerpt">
+                            <p>
+                                Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
+                            </p>
+                        </div>
+                        <div class="entry__meta">
+                            <span class="entry__meta-links">
+                                <a href="category.html">Famille</a>
+                                <a href="category.html">Vie sociale</a>
+                            </span>
+                        </div>
+                    </div>
+
+                </article> <!-- end article -->
+
+                <article class="masonry__brick entry format-standard" data-aos="fade-up">
+
+                    <div class="entry__thumb">
+                        <a href="single-standard.html" class="entry__thumb-link">
+                            <img src="{{ asset('fanzine/assets/images/thumbs/masonry/beetle-400.jpg') }}" 
+                                    srcset="fanzine/assets/images/thumbs/masonry/beetle-400.jpg 1x, fanzine/assets/images/thumbs/masonry/beetle-800.jpg 2x" alt="">
+                        </a>
+                    </div>
+
+                    <div class="entry__text">
+                        <div class="entry__header">
+                            
+                            <div class="entry__date">
+                                <a href="single-standard.html">10 Décembre 2017</a>
+                            </div>
+                            <h1 class="entry__title"><a href="single-standard.html">Retour au bon vieux temps</a></h1>
+                            
+                        </div>
+                        <div class="entry__excerpt">
+                            <p>
+                                Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
+                            </p>
+                        </div>
+                        <div class="entry__meta">
+                            <span class="entry__meta-links">
+                                <a href="category.html">Mode de vie</a>
+                            </span>
+                        </div>
+                    </div>
+
+                </article> <!-- end article -->
+
+                <article class="masonry__brick entry format-standard" data-aos="fade-up">
+
+                    <div class="entry__thumb">
+                        <a href="single-standard.html" class="entry__thumb-link">
+                            <img src="{{ asset('fanzine/assets/images/thumbs/masonry/fuji-400.jpg') }}" 
+                                    srcset="fanzine/assets/images/thumbs/masonry/fuji-400.jpg 1x, fanzine/assets/images/thumbs/masonry/fuji-800.jpg 2x" alt="">
+                        </a>
+                    </div>
+
+                    <div class="entry__text">
+                        <div class="entry__header">
+                            
+                            <div class="entry__date">
+                                <a href="single-standard.html">10 Décembre 2017</a>
+                            </div>
+                            <h1 class="entry__title"><a href="single-standard.html">Un autre billet de format standard</a></h1>
+                            
+                        </div>
+                        <div class="entry__excerpt">
+                            <p>
+                                Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
+                            </p>
+                        </div>
+                        <div class="entry__meta">
+                            <span class="entry__meta-links">
+                                <a href="category.html">Design</a> 
+                                <a href="category.html">Photographies</a>
+                            </span>
+                        </div>
+                    </div>
+
+                </article> <!-- end article -->
+
+                <article class="masonry__brick entry format-standard" data-aos="fade-up">
+
+                    <div class="entry__thumb">
+                        <a href="single-standard.html" class="entry__thumb-link">
+                            <img src="{{ asset('fanzine/assets/images/thumbs/masonry/sydney-400.jpg') }}" 
+                                    srcset="fanzine/assets/images/thumbs/masonry/sydney-400.jpg 1x, fanzine/assets/images/thumbs/masonry/sydney-800.jpg 2x" alt="">
+                        </a>
+                    </div>
+
+                    <div class="entry__text">
+                        <div class="entry__header">
+                            
+                            <div class="entry__date">
+                                <a href="single-standard.html">10 Décembre 2017</a>
+                            </div>
+                            <h1 class="entry__title"><a href="single-standard.html">Organisez votre premier voyage à Sydney</a></h1>
+                            
+                        </div>
+                        <div class="entry__excerpt">
+                            <p>
+                                Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...
+                            </p>
+                        </div>
+                        <div class="entry__meta">
+                            <span class="entry__meta-links">
+                                <a href="category.html">Voyages</a> 
+                                <a href="category.html">Vacances</a>
+                            </span>
+                        </div>
+                    </div>
+
+                </article> <!-- end article -->
+
+            </div> <!-- end masonry -->
+        </div> <!-- end masonry-wrap -->
+
+        <div class="row">
+            <div class="col-full">
+                <nav class="pgn">
+                    <ul>
+                        <li><a class="pgn__prev" href="#0">Précédent</a></li>
+                        <li><a class="pgn__num" href="#0">1</a></li>
+                        <li><span class="pgn__num current">2</span></li>
+                        <li><a class="pgn__num" href="#0">3</a></li>
+                        <li><a class="pgn__num" href="#0">4</a></li>
+                        <li><a class="pgn__num" href="#0">5</a></li>
+                        <li><span class="pgn__num dots">…</span></li>
+                        <li><a class="pgn__num" href="#0">8</a></li>
+                        <li><a class="pgn__next" href="#0">Suivant</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </section> <!-- s-content -->
+
+
+    <!-- s-extra
+    ================================================== -->
+    <section class="s-extra">
+
+        <div class="row top">
+
+            <div class="col-eight md-six tab-full popular">
+                <h3>Articles les plus lus</h3>
+
+                <div class="block-1-2 block-m-full popular__posts">
+                    <article class="col-block popular__post">
+                        <a href="#0" class="popular__thumb">
+                            <img src="{{ asset('fanzine/assets/images/thumbs/small/wheel-150.jpg') }}" alt="">
+                        </a>
+                        <h5><a href="#0">La visite des parcs à thème améliore votre santé</a></h5>
+                        <section class="popular__meta">
+                                <span class="popular__author"><span>Par</span> <a href="#0"> Fanzine</a></span>
+                            <span class="popular__date"><span>le</span> <time datetime="2017-12-19">19 déc. 2017</time></span>
+                        </section>
+                    </article>
+                    <article class="col-block popular__post">
+                        <a href="#0" class="popular__thumb">
+                            <img src="{{ asset('fanzine/assets/images/thumbs/small/shutterbug-150.jpg') }}" alt="">
+                        </a>
+                        <h5><a href="#0">Principaux avantages de la photographie de famille</a></h5>
+                        <section class="popular__meta">
+                            <span class="popular__author"><span>Par</span> <a href="#0"> Fanzine</a></span>
+                            <span class="popular__date"><span>le</span> <time datetime="2017-12-18">18 déc. 2017</time></span>
+                        </section>
+                    </article>
+                    <article class="col-block popular__post">
+                        <a href="#0" class="popular__thumb">
+                            <img src="{{ asset('fanzine/assets/images/thumbs/small/cookies-150.jpg') }}" alt="">
+                        </a>
+                        <h5><a href="#0">Biscuits aux flocons d'avoine sans sucre</a></h5>
+                        <section class="popular__meta">
+                                <span class="popular__author"><span>Par</span> <a href="#0"> Fanzine</a></span>
+                            <span class="popular__date"><span>le</span> <time datetime="2017-12-16">16 déc. 2017</time></span>
+                        </section>
+                    </article>
+                    <article class="col-block popular__post">
+                        <a href="#0" class="popular__thumb">
+                            <img src="{{ asset('fanzine/assets/images/thumbs/small/beetle-150.jpg') }}" alt="">
+                        </a>
+                        <h5><a href="#0">Retour au bon vieux temps</a></h5>
+                        <section class="popular__meta">
+                            <span class="popular__author"><span>Par</span> <a href="#0"> Fanzine</a></span>
+                            <span class="popular__date"><span>le</span> <time datetime="2017-12-16">16 déc. 2017</time></span>
+                        </section>
+                    </article>
+                    <article class="col-block popular__post">
+                        <a href="#0" class="popular__thumb">
+                            <img src="{{ asset('fanzine/assets/images/thumbs/small/tulips-150.jpg') }}" alt="">
+                        </a>
+                        <h5><a href="#0">10 faits intéressants sur la caféine</a></h5>
+                        <section class="popular__meta">
+                            <span class="popular__author"><span>Par</span> <a href="#0"> Fanzine</a></span>
+                            <span class="popular__date"><span>le</span> <time datetime="2017-12-14">14 déc. 2017</time></span>
+                        </section>
+                    </article>
+                    <article class="col-block popular__post">
+                        <a href="#0" class="popular__thumb">
+                            <img src="{{ asset('fanzine/assets/images/thumbs/small/salad-150.jpg') }}" alt="">
+                        </a>
+                        <h5><a href="#0">Recettes de salades méditerranéennes saines</a></h5>
+                        <section class="popular__meta">
+                            <span class="popular__author"><span>Par</span> <a href="#0"> Fanzine</a></span>
+                            <span class="popular__date"><span>le</span> <time datetime="2017-12-12">12 déc. 2017</time></span>
+                        </section>
+                    </article>
+                </div> <!-- end popular_posts -->
+            </div> <!-- end popular -->
+            
+            <div class="col-four md-six tab-full about">
+                <h3>A propos de Fanzine de Breizh</h3>
+                <p>
+                J’ai créé ce blog dans le cadre de ma formation de développeur Web et Web Mobile. Au sein de l’AFPA, huit mois durant, j’ai appris les langages qui me permettent de concevoir des sites Web.
+                Amoureux de la Bretagne au plus profond de moi, il me tenait à coeur de vous présenter les balades que régulièrement je fais dans ces merveilleux paysages. La contemplation des horizons lorsque la lumière naissante embrase la végétation, lorsque le soleil s’échappe flamboyant à la nuit tombée, les embruns et l’iode, le sourire des gens, sont des choses qui me font me sentir moi, là à cet endroit.
+                J’essaierai tout au long de ce voyage de vous faire partager le bonheur que j’ai à marcher et à flâner en Cornouaille et en Bretagne. D’être présent avec les gens qui y habitent et qui font que ce pays est unique.</p>
+                Très bonne balade.
+                Bevet Breizh !
+                </p>
+
+                <ul class="about__social">
+                    {# <li>
+                        <a href="#0"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    </li> #}
+                    <li>
+                        <a href="https://twitter.com/fanzinedebreizh" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </li>
+{#                     <li>
+                        <a href="#0" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </li> #}
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCLjOzL3O5LwtDbMVhNVfc1g" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                    </li>
+                </ul> <!-- end header__social -->
+            </div> <!-- end about -->
+
+        </div> <!-- end row -->
+
+        <div class="row bottom tags-wrap">
+            <div class="col-full tags">
+                <h3>Tags</h3>
+
+                <div class="tagcloud">
+                    <a href="#0">Salade</a>
+                    <a href="#0">Recettes</a>
+                    <a href="#0">Lieux</a>
+                    <a href="#0">Conseils</a>
+                    <a href="#0">Amis</a>
+                    <a href="#0">Voyages</a>
+                    <a href="#0">Exercice</a>
+                    <a href="#0">Lecture</a>
+                    <a href="#0">Courses à pied</a>
+                    <a href="#0">Auto-assistance</a>
+                    <a href="#0">Vacances</a>
+                </div> <!-- end tagcloud -->
+            </div> <!-- end tags -->
+        </div> <!-- end tags-wrap -->
+
+    </section> <!-- end s-extra -->
+
+
+        <!-- AB 2022-04-26
+         J'ai considéré que le main finissait à ce point -->
+
+{% endblock %}

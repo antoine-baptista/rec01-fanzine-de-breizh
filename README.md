@@ -29,8 +29,9 @@ Pour créer ce projet :
 - Vérifier le .env pour :
     - Les paramètres de connexion à la BD
     > DATABASE_URL="mysql://root:@127.0.0.1:3306/fanzine_de_breizh?serverVersion=10.6.5-MariaDB&charset=utf8mb4"
-- Dans une console, lancer le serveur web :
+- Dans une console, j'ai lancé le serveur web :
     > symfony server:start
+
 
 
 
