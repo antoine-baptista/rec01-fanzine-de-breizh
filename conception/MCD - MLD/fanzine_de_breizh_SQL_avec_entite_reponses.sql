@@ -14,7 +14,7 @@ CREATE TABLE USERS(
         user_email       Varchar (100) NOT NULL ,
         user_password    Varchar (150) NOT NULL ,
         user_authentifie Int ,
-        user_role        Varchar (25) NOT NULL ,
+        user_role        Varchar (25) ,
         date_de_creation TimeStamp NOT NULL
 	,CONSTRAINT USERS_PK PRIMARY KEY (user_ID)
 )ENGINE=InnoDB;
@@ -95,12 +95,13 @@ CREATE TABLE CATEGORIES(
 #------------------------------------------------------------
 
 CREATE TABLE ARTICLES(
-        article_ID                  Int NOT NULL ,
+        article_ID                  Int  Auto_increment  NOT NULL ,
         article_titre               Varchar (150) NOT NULL ,
         article_slug                Varchar (255) NOT NULL ,
+        article_type_de_publication Varchar (20) NOT NULL ,
         article_contenu             Text NOT NULL ,
-        article_url_image           Varchar (255) NOT NULL ,
-        article_tag                 Varchar (255) NOT NULL ,
+        article_url_photomedia      Varchar (255) ,
+        article_tag                 Varchar (255) ,
         article_date_de_publication TimeStamp NOT NULL ,
         user_ID                     Int NOT NULL ,
         categorie_ID                Int NOT NULL ,
