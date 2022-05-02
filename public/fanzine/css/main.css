@@ -219,6 +219,10 @@ p.lead {
    color: #000000;
 }
 
+.s-footer__bottom .s-footer__copyright span a {
+   font-family: "pacifico", sans-serif;
+}
+
 @media only screen and (max-width:800px) {
    p.lead {
       font-size: 1.8rem;
@@ -1168,19 +1172,21 @@ button::-moz-focus-inner, input::-moz-focus-inner {
    padding: .6rem 1.2rem;
    height: 3.6rem;
    margin: .3rem .15rem;
-   color: #151515;
+   color: #D50050;
    border-radius: 3px;
    -webkit-transition: all 0.3s ease-in-out;
    transition: all 0.3s ease-in-out;
 }
 
 .pgn__num:hover {
-   background: #c4c4c4;
-   color: #151515;
+   /* background: #c4c4c4; */
+   background: rgba(61, 166, 193, 0.63);
+   /* color: #151515; */
+   color: #fff;
 }
 
 .pgn .current, .pgn .current:hover {
-   background-color: #151515;
+   background-color: rgba(213, 0, 82, 0.63);
    color: #FFFFFF;
 }
 
@@ -1191,7 +1197,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .pgn__prev, .pgn__next {
    display: block;
-   background-color: #FFFFFF;
+   background-color: #D50050;
    background-repeat: no-repeat;
    background-size: 18px 12px;
    background-position: center;
@@ -1215,7 +1221,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .pgn__prev:hover, .pgn__next:hover {
-   background-color: #151515;
+   background-color: #3DA6C1;
    color: #FFFFFF;
    text-decoration: none;
    background-repeat: no-repeat;
@@ -1729,6 +1735,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .s-pageheader {
    min-height: 174px;
    background-image: url(../assets/images/hero-bg.jpg);
+   /* background-image: url(../assets/images/loc-amand-bg.jpg); */
+   /* background-size: cover; */
    background-repeat: no-repeat;
    background-position: center center;
    position: relative;
@@ -3423,13 +3431,25 @@ footer h4::after {
  * ------------------------------------------------------------------- */
 .s-footer__bottom .s-footer__copyright span {
    display: inline-block;
+   color: rgba(186, 199, 0, 0.63);
+}
+
+.s-footer__bottom .s-footer__copyright span a {
+   display: inline-block;
+   color: rgba(61, 166, 193, 0.63);
+}
+
+.s-footer__bottom .s-footer__copyright span a:hover {
+   display: inline-block;
+   color: rgba(213, 0, 80, 0.63);
 }
 
 .s-footer__bottom .s-footer__copyright span::after {
    content: "|";
    display: inline-block;
    padding: 0 1rem 0 1.2rem;
-   color: rgba(255, 255, 255, 0.1);
+   color: rgba(186, 199, 0, 0.63);
+   /* color: rgba(255, 255, 255, 0.1); */
 }
 
 .s-footer__bottom .s-footer__copyright span:last-child::after {
